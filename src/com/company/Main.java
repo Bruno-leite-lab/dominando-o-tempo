@@ -26,7 +26,7 @@ public class Main {
         System.out.println(datasEspeciais.toString());
 
         System.out.println("sou foda");
-
+        System.out.println(ConstantesDeTempo.DIA_EM_MILISEGNUDOS);
 
     }
 

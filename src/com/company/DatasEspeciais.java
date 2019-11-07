@@ -78,8 +78,7 @@ public class DatasEspeciais {
         GregorianCalendar dataAtual = new GregorianCalendar();
         long dataInicioEmMiliSegundos = this.dataInicioRelacao.getTimeInMillis();
         long dataAtualEmMiliSegundos = dataAtual.getTimeInMillis();
-        long miliSegundosDeUmDia = 86400000L;
-        long diasDaRelacao = (dataAtualEmMiliSegundos - dataInicioEmMiliSegundos)/miliSegundosDeUmDia;
+        long diasDaRelacao = (dataAtualEmMiliSegundos - dataInicioEmMiliSegundos)/ConstantesDeTempo.DIA_EM_MILISEGNUDOS.getUnidadeDeTempo();
         this.diasCorridosDaRelacao = diasDaRelacao;
     }
 }
